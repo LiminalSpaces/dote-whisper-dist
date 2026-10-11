@@ -1,0 +1,54 @@
+name: Bug report
+description: Something doesn't work, crashes, or gives a wrong result.
+labels: ["bug"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for reporting this. Issues on this repository are visible to everyone, so please don't attach recordings or transcripts you aren't allowed to share publicly. To report privately instead, use **Help ▸ Send Feedback…** in the app or the [feedback page](https://dote-whisper.alexstein.ca/feedback/).
+    - type: input
+      id: version
+      attributes:
+          label: App version
+          description: The version you installed, e.g. 1.0.3. It's in the file name you downloaded.
+      validations:
+          required: true
+    - type: dropdown
+      id: os
+      attributes:
+          label: Operating system
+          options:
+              - macOS (Apple silicon)
+              - macOS (Intel)
+              - Windows
+      validations:
+          required: true
+    - type: input
+      id: os-version
+      attributes:
+          label: Operating system version
+          placeholder: e.g. macOS 26.1, Windows 11 24H2
+    - type: input
+      id: model
+      attributes:
+          label: Model
+          description: The speech recognition model you used, and whether speaker labels were on.
+          placeholder: e.g. Large V3, speaker labels on, 3 expected speakers
+    - type: textarea
+      id: what-happened
+      attributes:
+          label: What happened?
+          description: What did you do, what did you expect, and what happened instead?
+      validations:
+          required: true
+    - type: textarea
+      id: recordings
+      attributes:
+          label: Recordings
+          description: The file types, roughly how long each recording is, the languages spoken and how many speakers.
+          placeholder: e.g. one 90-minute M4A, English and Danish, 4 speakers
+    - type: textarea
+      id: extra
+      attributes:
+          label: Screenshots or error messages
+          description: Paste any error text, or drag in a screenshot.

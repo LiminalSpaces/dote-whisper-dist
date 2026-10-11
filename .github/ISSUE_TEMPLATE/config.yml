@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+    - name: Send feedback privately
+      url: https://dote-whisper.alexstein.ca/feedback/
+      about: Report a problem or suggest something without a GitHub account. Only the developer sees it.
+    - name: User guide
+      url: https://dote-whisper.alexstein.ca/guide/
+      about: Step-by-step help with models, languages, speaker labels, tuning and exports.
